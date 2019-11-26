@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/Basics"
+        android:text="Hotel Booking"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/tvciDate"
+    style="@style/Basics"
+    android:text="Check-in Date"
+    android:textAlignment="center"/>
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/etciDate"-->
+<!--        style="@style/Basics"-->
+<!--        android:textAlignment="center"-->
+<!--        android:hint="Enter Date"/>-->
+    <TextView
+        android:id="@+id/tvcoDate"
+        style="@style/Basics"
+        android:text="Check-in Date"
+        android:textAlignment="center"/>
+<!--    <EditText-->
+<!--        android:id="@+id/etcoDate"-->
+<!--        style="@style/Basics"-->
+<!--        android:textAlignment="center"-->
+<!--        android:hint="Enter Date"/>-->
+
+    <Spinner
+        android:id="@+id/spnrRoomtype"
+        style="@style/Basics"/>
+
+
+   <GridLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_gravity="center"
+       android:rowCount="2"
+       android:columnCount="3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        style="@style/BasicsH"
+        android:text="Adult"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        style="@style/BasicsH"
+        android:text="Children"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           style="@style/BasicsH"
+           android:text="Room" />
+
+       <EditText
+           android:id="@+id/etAdult"
+           android:layout_width="wrap_content"
+           style="@style/BasicsH"
+           android:inputType="number"
+           android:hint="0"/>
+
+       <EditText
+           android:id="@+id/etChildren"
+           android:layout_width="wrap_content"
+           style="@style/BasicsH"
+           android:inputType="number"
+           android:hint="0"/>
+
+       <EditText
+           android:id="@+id/etRoom"
+           android:layout_width="wrap_content"
+           style="@style/BasicsH"
+           android:inputType="number"
+           android:hint="0"/>
+
+   </GridLayout>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        style="@style/BasicsH"
+        android:text="Calculate"/>
+    <TextView
+        android:id="@+id/tvResult"
+        style="@style/Basics"
+        android:textAlignment="center"/>
+
+
+
+
+
+
+
+</LinearLayout>
